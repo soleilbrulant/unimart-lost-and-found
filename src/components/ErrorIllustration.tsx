@@ -1,30 +1,62 @@
 
 const ErrorIllustration = () => {
   return (
-    <div className="relative w-full max-w-md mx-auto">
+    <div className="relative w-full max-w-lg mx-auto">
       {/* Background gradient circle */}
       <div className="absolute inset-0 bg-gradient-radial from-pastel-green/30 via-pastel-peach/20 to-transparent rounded-full"></div>
       
-      {/* Main laptop illustration */}
+      {/* Main illustration */}
       <div className="relative z-10 flex flex-col items-center">
         <div className="relative">
-          {/* Halo above laptop */}
-          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-            <div className="w-20 h-4 rounded-full border-4 border-yellow-300 opacity-80 animate-pulse"></div>
-          </div>
-          
           {/* Laptop base */}
-          <div className="w-64 h-4 bg-gradient-to-r from-gray-300 to-gray-400 rounded-lg shadow-lg"></div>
+          <div className="w-72 h-5 bg-gradient-to-r from-gray-300 to-gray-400 rounded-lg shadow-lg"></div>
           
           {/* Laptop screen */}
-          <div className="w-60 h-40 bg-gradient-to-br from-gray-800 to-gray-900 rounded-t-lg border-4 border-gray-300 -mt-1 relative overflow-hidden">
-            {/* Dead screen with X eyes */}
+          <div className="w-64 h-44 bg-gradient-to-br from-gray-800 to-gray-900 rounded-t-lg border-4 border-gray-300 -mt-1 relative overflow-hidden">
+            {/* Screen with garbled text */}
             <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-800 flex flex-col items-center justify-center text-white p-4">
-              <div className="text-4xl mb-2 text-red-400">✕ ✕</div>
-              <div className="text-lg mb-1 text-gray-300">💀</div>
-              <div className="text-xs text-center text-gray-400">
-                <div className="mb-1">System has died</div>
-                <div className="text-xs opacity-60">RIP</div>
+              <div className="text-xs text-green-400 font-mono mb-2 text-center leading-tight">
+                <div>ERROR: System.exe has stopped working</div>
+                <div className="text-red-400">Fatal exception 0xC0000005</div>
+                <div className="text-yellow-400">Memory access violation</div>
+                <div className="text-blue-400 animate-pulse">░░█▓▒░ CRASH ░▒▓█░░</div>
+              </div>
+              <div className="text-2xl font-bold text-red-500 mt-2 animate-glitch">404</div>
+            </div>
+          </div>
+          
+          {/* Fluffy cat sitting on keyboard */}
+          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
+            <div className="relative">
+              {/* Cat body */}
+              <div className="w-16 h-12 bg-gradient-to-b from-orange-200 to-orange-300 rounded-full relative">
+                {/* Cat stripes */}
+                <div className="absolute top-2 left-2 w-3 h-1 bg-orange-400 rounded"></div>
+                <div className="absolute top-4 left-3 w-2 h-1 bg-orange-400 rounded"></div>
+                <div className="absolute top-2 right-2 w-3 h-1 bg-orange-400 rounded"></div>
+                
+                {/* Cat head */}
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-10 h-8 bg-gradient-to-b from-orange-200 to-orange-300 rounded-full">
+                  {/* Ears */}
+                  <div className="absolute -top-2 left-1 w-3 h-3 bg-orange-300 rounded-full transform rotate-45"></div>
+                  <div className="absolute -top-2 right-1 w-3 h-3 bg-orange-300 rounded-full transform rotate-45"></div>
+                  
+                  {/* Eyes */}
+                  <div className="absolute top-2 left-2 w-1.5 h-1.5 bg-black rounded-full"></div>
+                  <div className="absolute top-2 right-2 w-1.5 h-1.5 bg-black rounded-full"></div>
+                  
+                  {/* Nose */}
+                  <div className="absolute top-3 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-pink-400 rounded-full"></div>
+                </div>
+                
+                {/* Animated tail */}
+                <div className="absolute -right-2 top-2 w-8 h-2 bg-orange-300 rounded-full transform rotate-12 animate-float">
+                  <div className="absolute right-0 top-0 w-2 h-1 bg-orange-400 rounded"></div>
+                </div>
+                
+                {/* Paws */}
+                <div className="absolute -bottom-1 left-2 w-2 h-2 bg-orange-400 rounded-full"></div>
+                <div className="absolute -bottom-1 right-2 w-2 h-2 bg-orange-400 rounded-full"></div>
               </div>
             </div>
           </div>

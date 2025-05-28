@@ -1,10 +1,12 @@
 
 import Header from "../components/Header";
 import ErrorIllustration from "../components/ErrorIllustration";
+import BackgroundIcons from "../components/BackgroundIcons";
 
 const NotFound = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cream via-pastel-green/10 to-pastel-peach/10 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-cream via-pastel-green/10 to-pastel-peach/10 flex flex-col relative">
+      <BackgroundIcons />
       <Header />
       
       <main className="flex-1 flex items-center justify-center px-6 py-12">
