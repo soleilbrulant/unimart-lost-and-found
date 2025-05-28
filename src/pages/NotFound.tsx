@@ -1,12 +1,8 @@
 
-import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import ErrorIllustration from "../components/ErrorIllustration";
-import StatsFooter from "../components/StatsFooter";
 
 const NotFound = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-cream via-pastel-green/10 to-pastel-peach/10 flex flex-col">
       <Header />
@@ -29,26 +25,8 @@ const NotFound = () => {
             This page doesn't exist or was moved. Let's get you back on track.
           </p>
           
-          {/* Action buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button 
-              onClick={() => navigate('/')}
-              className="btn-primary shadow-lg"
-            >
-              Back to Home
-            </button>
-            <button 
-              onClick={() => navigate('/shop')}
-              className="btn-secondary"
-            >
-              Start Shopping
-            </button>
-          </div>
-          
         </div>
       </main>
-      
-      <StatsFooter />
     </div>
   );
 };
