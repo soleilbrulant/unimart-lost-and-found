@@ -25,38 +25,54 @@ const ErrorIllustration = () => {
             </div>
           </div>
           
-          {/* Fluffy cat sitting on keyboard */}
-          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
+          {/* Big cute panda sitting on keyboard */}
+          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-10">
             <div className="relative">
-              {/* Cat body */}
-              <div className="w-16 h-12 bg-gradient-to-b from-orange-200 to-orange-300 rounded-full relative">
-                {/* Cat stripes */}
-                <div className="absolute top-2 left-2 w-3 h-1 bg-orange-400 rounded"></div>
-                <div className="absolute top-4 left-3 w-2 h-1 bg-orange-400 rounded"></div>
-                <div className="absolute top-2 right-2 w-3 h-1 bg-orange-400 rounded"></div>
+              {/* Panda body */}
+              <div className="w-20 h-16 bg-gradient-to-b from-gray-100 to-white rounded-full relative shadow-lg">
+                {/* Panda belly */}
+                <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-12 h-8 bg-white rounded-full"></div>
                 
-                {/* Cat head */}
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-10 h-8 bg-gradient-to-b from-orange-200 to-orange-300 rounded-full">
-                  {/* Ears */}
-                  <div className="absolute -top-2 left-1 w-3 h-3 bg-orange-300 rounded-full transform rotate-45"></div>
-                  <div className="absolute -top-2 right-1 w-3 h-3 bg-orange-300 rounded-full transform rotate-45"></div>
+                {/* Panda head */}
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-14 h-12 bg-gradient-to-b from-gray-100 to-white rounded-full">
+                  {/* Panda ears (black) */}
+                  <div className="absolute -top-3 left-1 w-4 h-4 bg-black rounded-full"></div>
+                  <div className="absolute -top-3 right-1 w-4 h-4 bg-black rounded-full"></div>
                   
-                  {/* Eyes */}
-                  <div className="absolute top-2 left-2 w-1.5 h-1.5 bg-black rounded-full"></div>
-                  <div className="absolute top-2 right-2 w-1.5 h-1.5 bg-black rounded-full"></div>
+                  {/* Inner ears (pink) */}
+                  <div className="absolute -top-2 left-2 w-2 h-2 bg-pink-300 rounded-full"></div>
+                  <div className="absolute -top-2 right-2 w-2 h-2 bg-pink-300 rounded-full"></div>
+                  
+                  {/* Eye patches (black) */}
+                  <div className="absolute top-2 left-1.5 w-3 h-4 bg-black rounded-full transform rotate-12"></div>
+                  <div className="absolute top-2 right-1.5 w-3 h-4 bg-black rounded-full transform -rotate-12"></div>
+                  
+                  {/* Eyes (white with black pupils) */}
+                  <div className="absolute top-3 left-2.5 w-2 h-2 bg-white rounded-full">
+                    <div className="absolute top-0.5 left-0.5 w-1 h-1 bg-black rounded-full"></div>
+                  </div>
+                  <div className="absolute top-3 right-2.5 w-2 h-2 bg-white rounded-full">
+                    <div className="absolute top-0.5 right-0.5 w-1 h-1 bg-black rounded-full"></div>
+                  </div>
                   
                   {/* Nose */}
-                  <div className="absolute top-3 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-pink-400 rounded-full"></div>
+                  <div className="absolute top-5 left-1/2 transform -translate-x-1/2 w-1.5 h-1 bg-black rounded-full"></div>
+                  
+                  {/* Mouth */}
+                  <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-3 h-1 border-b-2 border-black rounded-full"></div>
                 </div>
                 
-                {/* Animated tail */}
-                <div className="absolute -right-2 top-2 w-8 h-2 bg-orange-300 rounded-full transform rotate-12 animate-float">
-                  <div className="absolute right-0 top-0 w-2 h-1 bg-orange-400 rounded"></div>
-                </div>
+                {/* Panda arms */}
+                <div className="absolute top-2 -left-2 w-4 h-6 bg-black rounded-full transform rotate-12"></div>
+                <div className="absolute top-2 -right-2 w-4 h-6 bg-black rounded-full transform -rotate-12"></div>
                 
-                {/* Paws */}
-                <div className="absolute -bottom-1 left-2 w-2 h-2 bg-orange-400 rounded-full"></div>
-                <div className="absolute -bottom-1 right-2 w-2 h-2 bg-orange-400 rounded-full"></div>
+                {/* Panda legs */}
+                <div className="absolute -bottom-2 left-2 w-3 h-4 bg-black rounded-full"></div>
+                <div className="absolute -bottom-2 right-2 w-3 h-4 bg-black rounded-full"></div>
+                
+                {/* Cute blush */}
+                <div className="absolute top-1 left-0 w-2 h-1 bg-pink-200 rounded-full opacity-60"></div>
+                <div className="absolute top-1 right-0 w-2 h-1 bg-pink-200 rounded-full opacity-60"></div>
               </div>
             </div>
           </div>
